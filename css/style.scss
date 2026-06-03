@@ -429,22 +429,20 @@ body {
     height: 120px;
     margin: 0 auto;
     background-color: transparent;
+    transition: transform 0.3s ease;
 }
-
+.avatar-wrapper:hover {
+    transform: scale(1.05);
+}
 .my-avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: rotateAvatar 12s linear infinite;
 }
 
-.avatar-wrapper:hover .my-avatar {
-    transform: scale(1.1);
-    animation-play-state: paused;
-}
 
 .avatar-container::before {
     content: '';
