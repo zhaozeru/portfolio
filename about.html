@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asorn - About Me</title>
+    <title>zzr - About me</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
 </head>
@@ -13,20 +13,20 @@
         <div class="main">
             <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
             <div class="menu">
-                <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
-                <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
-                <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
-                <li class="magical btn nav" onclick="window.location.href='./about.html'">About</li>
+                <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">应用作品</li>
+                <!-- <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li> -->
+                <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
             </div>
             <div class="menu" id="menu-expand">
                 <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
             </div>
             <div id="menu-panel">
                 <div class="menu-panel-content">
-                    <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
-                    <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
-                    <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
-                    <li class="magical btn nav" onclick="window.location.href='./about.html'">About</li>
+                    <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">应用作品</li>
+                    <!-- <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li> -->
+                    <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
                 </div>
             </div>
         </div>
@@ -34,16 +34,15 @@
     </div>
     <div class="about">
         <div class="about-top">
-            <div class="about-name">Name</div>
+            <div class="about-name">赵泽儒</div>
             <div class="about-info">
                 <div class="about-info-left">
                     <div class="about-info-title">Introduce</div>
-                    <div class="introduce-desc">
-                        I am currently a product designer, junior developer, and aspire to become a design engineer. Having insights and practical experience in multiple industries such as cloud computing, low code, e-commerce, intelligent customer service, and zero trust.<br><br>
-                        I am passionate about the infinite possibilities of technology and also focused on exploring the values of product design, seeking a balance between ultimate design, interaction, technological inclusion, and business understanding to solve problems.<br><br>
-                        In addition, I have won three patents for appearance invention, which can be found in the <a href="http://epub.cnipa.gov.cn/" target="_blank">China National Intellectual Property Administration ↗</a> Enter my name on the official website to search.
-                    </div>
+                    <div class="introduce-desc load-pro visible" data-i18n="about.intro" data-i18n-type="html">目前是一名刚入门的产品经理，初级 AI 工具开发者，立志做一名 AI 应用设计师。研究生学习期间，不断探索并学习新的技术与应用，在知识图谱 (knowledgeGraph)、智能问答 (Knowledge-based QA)、智能体应用 (Agent)方面有一些实践落地经验。<br><br>我热衷于利用AI工具与技术带来的高效与简洁，开启了编程学习之旅，开发了几个小的<a href="./work.html"> 应用工具 ↗</a>。<br>我保持好奇心，专注于探索世界与产品应用价值，持续记录与总结，有随手记录的习惯，在我的语雀文档中。<br><br>除此之外，我曾获得上海图书馆开放数据竞赛人气奖，你可以在 <a href="https://opendata.library.sh.cn/news/2024/10/14/" target="_blank">上图官网 ↗</a> 中查询到。<br><br>平时比较宅，喜欢看bilibili，也喜欢看电影，偶尔看看的中二动画片，日常收集奇思妙想。</div>
                 </div>
+
+                
+
                 <div class="about-info-right">
                     <div class="contact">
                         <div class="about-info-title">Contact</div>
@@ -51,14 +50,14 @@
                             <div class="list">
                                 <div class="list-label">Email：</div>
                                 <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"  title="点击复制邮箱">
-                                    <a id="emailCopied">hi@asorn.cn</a>
+                                    <a id="emailCopied">13652001060@163.com</a>
                                 </div>
                                 <span class="list-value copied">copied&nbsp;✓</span>
                             </div>
                             <div class="list">
                                 <div class="list-label">Wechat：</div>
                                 <div class="list-value">
-                                    <a class="tooltip">imasorn
+                                    <a class="tooltip">zzr-re-fine
                                         <div class="tooltip-box">
                                             <img src="./assets/about/wechat.png">
                                         </div>
@@ -70,8 +69,8 @@
                     <div class="resume">
                         <div class="about-info-title resume-title">Resume</div>
                         <div class="resume-desc">
-                            <div class="resume-desc-helptext">Download my resume (PDF & 1MB)</div>
-                            <div class="magical resume-btn"><a href="https://asorn.cn/" target="_blank">Download</a></div>
+                            <div class="resume-desc-helptext">Download my resume</div>
+                            <div class="magical resume-btn"><a href="./assets/about/赵泽儒-简历.pdf" download="赵泽儒-简历.pdf">Download</a></div>
                         </div>
                     </div>
                 </div>
@@ -218,15 +217,13 @@
     </div>
     <div class="footer">
         <div class="copyright">
-            <div>© 2023 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+            <div>© 2026 Design by <a href="https://asorn.cn/" target="_blank">ZZR</a></div>
             <span>|</span>
             <div class="fillings">
-                <a href="https://asorn.cn/" target="_blank">Asorn</a>
+                <a href="https://asorn.cn/" target="_blank">from Asorn</a>
             </div>
-            <span>|</span>
-            <div class="friends">
-                <a href="https://zdo.fun/" target="_blank">ZDO</a>
-            </div>
+            
+            
         </div>
     </div>
     <div class="widget">

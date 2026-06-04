@@ -701,7 +701,7 @@ body {
 //项目页
 .work {
     @include main-center();
-    padding: 154px 40px 60px 40px;
+    padding: 100px 40px 60px 40px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -799,13 +799,30 @@ body {
                             border-radius: $border-radius-full;
                         }
 
-                        .tag-web {
-                            $color: #57AC84;
+                        .tag-spider {
+                            $color: #50C878;
                             color: $color;
                             background: rgba($color, 0.1);
                             border: 1px solid rgba($color, 0.16);
                         }
-
+                        .tag-tool {
+                            $color: #FF69B4;  
+                            color: $color;
+                            background: rgba($color, 0.1);
+                            border: 1px solid rgba($color, 0.16);
+                        }
+                        .tag-agent {
+                            $color: #AA66FF;  // 改成亮紫色
+                            color: $color;
+                            background: rgba($color, 0.1);
+                            border: 1px solid rgba($color, 0.16);
+                        }
+                        .tag-web {
+                            $color: #FFD700;  // 金黄色（亮黄）
+                            color: $color;
+                            background: rgba($color, 0.1);
+                            border: 1px solid rgba($color, 0.16);
+                        }
                         .tag-assets {
                             $color: #D59A78;
                             color: $color;
@@ -1396,4 +1413,26 @@ body {
             opacity: 1;
         }
     }
+}
+.work-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.work-title .title-hi {
+    font-size: 22px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+
+.work-title .title-line {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6361DC, #A29CD3);
+    margin: 0 auto;
+    border-radius: 3px;
 }
