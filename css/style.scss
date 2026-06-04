@@ -830,26 +830,39 @@ body {
                             border: 1px solid rgba($color, 0.16);
                         }
 
-                        .tag-app {
+                        .tag-prototype {
                             $color: #cb55d2;
                             color: $color;
                             background: rgba($color, 0.1);
                             border: 1px solid rgba($color, 0.16);
                         }
 
-                        .tag-2b {
+                        .tag-site {
                             $color: #6F98FF;
                             color: $color;
                             background: rgba($color, 0.1);
                             border: 1px solid rgba($color, 0.16);
                         }
 
-                        .tag-other {
+                        .tag-design {
                             $color: #939EA9;
                             color: $color;
                             background: rgba($color, 0.1);
                             border: 1px solid rgba($color, 0.16);
                         }
+                        .tag-app {
+                            $color: #1EF0D7;
+                            color: $color;
+                            background: rgba($color, 0.1);
+                            border: 1px solid rgba($color, 0.16);
+                        }
+                        .tag-pamphlet {
+                            $color: #F65F2D;
+                            color: $color;
+                            background: rgba($color, 0.1);
+                            border: 1px solid rgba($color, 0.16);
+                        }
+                        
                     }
 
                     .desc {
@@ -1344,15 +1357,18 @@ body {
                         gap: 16px;
 
                         .title {
-                            font-size: 14px;
+                        a {
+                            font-size: 16px;
                             line-height: 24px;
-                            font-weight: 500;
-                            background: linear-gradient(180deg, $color-text-body-primary 0%, rgba($color-text-body-primary, 0.72) 100%);
                             background-clip: text;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
+                            color: $color-text-body-secondary;
+                            transition: color .15s ease-in;
+                            &:hover {
+                                color: $color-brand-default;
+                            }
                         }
-
+                    }
+                      
                         .desc {
                             color: $color-text-body-secondary;
 
